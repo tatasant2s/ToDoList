@@ -1,0 +1,46 @@
+.container header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    background: #3CB371;
+    color: white;
+}
+
+.container main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container main input {
+    width: 70%;
+    height: 45px;
+    border-radius: 5px;
+    border: solid #3CB371;
+    margin: 100px 0px;
+    font-size: 18px;
+    align-items: center;
+    padding: 5px;
+}
+
+.container main button {
+    width: 10%;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #3CB371;
+    color: white;
+    cursor: pointer;
+    transition: filter 0.9;
+}
+
+.container main button:hover {
+    filter: brightness(0.9);
+}
+
+
