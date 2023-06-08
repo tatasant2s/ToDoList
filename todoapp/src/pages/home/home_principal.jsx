@@ -16,13 +16,8 @@ export function HomePrincipal() {
   }
 
   function handleDelete(index){
-    setTarefaList(prevState => prevState.filter((tarefa, i) => i!== index));
+    setTarefaList(prevState => prevState.filter((tarefa, i) => i !== index));
   }
-
-  function eventHandler(event) {
-
-  }
-
 
   return (
     <div className='container'>
@@ -31,12 +26,12 @@ export function HomePrincipal() {
       </header>
       
       <main>
-        <input type="text" onclick={eventHandler} placeholder='Insira Uma Tarefa' onChange={e=> setTarefa(e.target.value)}/>
+        <input type="text" placeholder='Insira Uma Tarefa' onChange={e=> setTarefa(e.target.value)}/>
         <button type='button' onClick={handleAddTarefa}> Criar Tarefa </button>
       </main>
       
       {
-        tarefaList.map((tarefa, index) => <Card handleDelete={handleDelete} key={tarefa.name} id={index} name={tarefa.name}/>)
+        tarefaList.map((tarefa, index) => <Card handelist={handelist} handleDelete={handleDelete} key={tarefa.name} id={index} name={tarefa.name}/>)
       }
 
     </div>
