@@ -31,7 +31,7 @@ export function HomePrincipal() {
       </main>
       
       {
-        tarefaList.map((tarefa, index) => <Card handelist={handelist} handleDelete={handleDelete} key={tarefa.name} id={index} name={tarefa.name}/>)
+        tarefaList.map((tarefa, index) => <Card handleDelete={handleDelete} key={tarefa.name} id={index} name={tarefa.name}/>)
       }
 
     </div>
