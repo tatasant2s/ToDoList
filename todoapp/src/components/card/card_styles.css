@@ -1,38 +1,45 @@
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card h1 {
-    background: red;
-    border: 1px solid;
+/* button name */
+.card .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  width: 40%;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
 }
 
+.card .name:hover {
+  background: #f8f8ff;
+}
+
+/* button delete */
 .card button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    height: 60px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    background: transparent;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
 }
 
-.card button:hover {
-    background: #F8F8FF;
-}
-
-.card button span{
-    border: 4px solid #3CB371;
-    border-radius: 5px;
-    font-size: 30px;
+.card button span {
+  margin-left: 10px;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 5px;
 }
 
 .card button span:hover {
-    background: #3CB371;
+  background: #63d596;
+  font-size: 28px;
+  cursor: pointer;
 }
